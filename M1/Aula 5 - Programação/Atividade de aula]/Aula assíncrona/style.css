@@ -1,0 +1,84 @@
+/* Estilos gerais */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+.content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.responsive-image {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* Responsividade */
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .content {
+        width: 45%;
+        text-align: left;
+    }
+    .image-container {
+        width: 45%;
+    }
+    .item-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .item-list li {
+        padding: 10px;
+        background: #ddd;
+        border-radius: 5px;
+        flex: 1;
+        text-align: center;
+        min-width: 120px;
+    }
+}

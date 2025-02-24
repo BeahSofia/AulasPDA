@@ -1,0 +1,46 @@
+/* Estilos gerais */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    /* Espaço entre os itens */
+    padding: 20px;
+}
+
+.item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    flex: 1;
+    /* Faz os itens ocuparem o espaço disponível */
+}
+
+
+/* Estilos para Mobile (coluna) */
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        /* Itens em coluna */
+    }
+}
+
+
+/* Estilos para Desktop (linha) */
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        /* Itens em linha */
+    }
+}
