@@ -1,0 +1,34 @@
+/* Estilo base do botão */
+
+.meu-botao {
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    /* Verde */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Transição suave */
+}
+
+
+/* Efeito hover (quando o mouse está em cima) */
+
+.meu-botao:hover {
+    background-color: #45a049;
+    /* Verde mais escuro */
+    transform: scale(1.05);
+    /* Aumenta ligeiramente o tamanho */
+}
+
+
+/* Efeito ativo (quando o botão é clicado) */
+
+.meu-botao:active {
+    background-color: #3d8b40;
+    /* Verde ainda mais escuro */
+    transform: scale(0.95);
+    /* Reduz ligeiramente o tamanho */
+}

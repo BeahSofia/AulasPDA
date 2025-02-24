@@ -1,0 +1,90 @@
+/* Estilos gerais */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+
+/* Cabeçalho */
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+
+/* Logo */
+
+.logo img {
+    height: 50px;
+    transition: transform 0.3s ease;
+    /* Efeito de transição suave */
+}
+
+.logo:hover img {
+    transform: scale(1.2);
+    /* Aumenta a logo em 20% */
+}
+
+
+/* Menu de navegação */
+
+.menu {
+    display: flex;
+    gap: 20px;
+    /* Espaço entre os botões */
+}
+
+.menu-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    /* Efeito de transição suave */
+}
+
+.menu-link:hover {
+    color: #4CAF50;
+    /* Muda a cor do texto para verde */
+}
+
+
+/* Lista de itens (base da atividade anterior) */
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    flex: 1;
+}
+
+
+/* Estilos responsivos */
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+}

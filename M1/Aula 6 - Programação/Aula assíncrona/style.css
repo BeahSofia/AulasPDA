@@ -1,0 +1,116 @@
+/* Estilos gerais */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+
+/* Menu de navegação */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 15px 0;
+}
+
+.menu-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+
+/* Pseudo-elemento ::before para separadores */
+
+.menu-link::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1px;
+    height: 50%;
+    background-color: #666;
+    transform: translateY(-50%);
+}
+
+
+/* Remove o separador do primeiro item */
+
+.menu-link:first-child::before {
+    display: none;
+}
+
+
+/* Efeitos de hover */
+
+.menu-link:hover {
+    color: #4CAF50;
+    background-color: #444;
+}
+
+
+/* Efeitos de active (clicado) */
+
+.menu-link:active {
+    color: #45a049;
+    background-color: #555;
+}
+
+
+/* Efeitos de visited */
+
+.menu-link:visited {
+    color: #ccc;
+}
+
+
+/* Adicionando uma animação ao hover */
+
+.menu-link:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #4CAF50;
+    transform: translateX(-50%);
+    animation: underline 0.3s forwards;
+}
+
+@keyframes underline {
+    to {
+        width: 100%;
+    }
+}
+
+
+/* Estilizando itens específicos com :nth-child */
+
+.menu-link:nth-child(2) {
+    font-weight: bold;
+}
+
+.menu-link:nth-child(3) {
+    font-style: italic;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-link::before {
+        display: none;
+    }
+}
