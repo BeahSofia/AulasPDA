@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tela de Vitória</title>
+</head>
+<body>
+    <div class="vitoria-tela">
+        <h1>Você Venceu!</h1>
+        <img src="trophy.png" alt="Troféu" class="trofeu-img">
+        <p>Parabéns! Você completou a missão com sucesso!</p>
+        <button onclick="reiniciarJogo()">Jogar Novamente</button>
+        <button onclick="verResultados()">Ver Resultados</button>
+        <button onclick="compartilhar()">Compartilhar com Amigos</button>
+        <audio id="parabens-audio" src="parabens.mp3"></audio>
+    </div>
+    <div id="confete-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

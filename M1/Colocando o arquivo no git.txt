@@ -1,0 +1,13 @@
+Enviando um aquivo para o github
+
+Abra o git bash no arquivo que quer anexar em um repositório:
+
+git init
+git add *
+git status
+git commit -m "qualquer coisa"
+git remote add origin "link do repositorio.git"
+git push -u origin master
+
+Prontin
+git
