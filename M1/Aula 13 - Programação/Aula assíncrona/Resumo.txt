@@ -1,0 +1,42 @@
+Anotação: O que são Commits Semânticos?
+
+O que é um Commit?
+- Um commit é um registro de alterações feitas em um repositório Git. Ele captura o estado do projeto em um determinado momento.
+- Cada commit tem uma mensagem que descreve o que foi alterado.
+
+O que são Commits Semânticos?
+- Commits semânticos são uma convenção para escrever mensagens de commit de forma padronizada e significativa.
+- Eles seguem um formato específico que ajuda a entender rapidamente o propósito das alterações.
+
+Formato de um Commit Semântico
+O formato básico de um commit semântico é:
+<tipo>: <descrição>
+
+Onde:
+- <tipo>: Indica o tipo de alteração realizada. Exemplos comuns:
+- feat: Nova funcionalidade.
+- fix: Correção de bug.
+- docs: Alterações na documentação.
+- style: Mudanças de formatação (espaços, vírgulas, etc.).
+- refactor: Refatoração de código (sem adicionar novas funcionalidades nem corrigir bugs).
+- test: Adição ou alteração de testes.
+- chore: Tarefas de manutenção (atualizações de dependências, configurações, etc.).
+- <descrição>: Uma breve descrição das alterações, escrita no imperativo (ex.: "Adiciona funcionalidade de login").
+
+Exemplos de Commits Semânticos
+1. feat: Adiciona funcionalidade de cadastro de usuários
+2. fix: Corrige erro de validação no formulário de login
+3. docs: Atualiza README com instruções de instalação
+4. style: Ajusta indentação do código
+
+Benefícios dos Commits Semânticos
+1. Clareza: As mensagens de commit são mais fáceis de entender.
+2. Organização: Facilita a navegação no histórico de commits.
+3. Automação: Pode ser usado para gerar changelogs (registros de mudanças) automaticamente.
+4. Colaboração: Melhora a comunicação entre desenvolvedores em projetos colaborativos.
+
+Como Adotar Commits Semânticos
+1. Padronize: Defina os tipos de commit que serão usados no projeto.
+2. Siga o formato: Use o formato <tipo>: <descrição> em todas as mensagens de commit.
+3. Revise: Antes de fazer um commit, revise a mensagem para garantir que está clara e no formato correto.
+
